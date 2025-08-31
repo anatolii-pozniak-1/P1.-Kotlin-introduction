@@ -1,0 +1,16 @@
+package triple_quoted_strings
+
+import org.junit.Assert
+import org.junit.Test
+
+class Test {
+    @Test(timeout = 1000)
+    fun testSolution() {
+        Assert.assertEquals(
+                "The margin prefix shouldn't be present " +
+                        "in the resulting string",
+                """question = "life, the universe, and everything"
+answer = 42""",
+                tripleQuotedString)
+    }
+}
